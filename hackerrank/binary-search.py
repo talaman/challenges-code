@@ -1,3 +1,55 @@
+# Objective: Given a binary tree, print the level order traversal of the tree -
+# that is, the nodes at each level from left to right.
+#
+# Task: Implement the levelOrder function in the editor below.
+#
+# levelOrder has the following parameter(s):
+#
+# Node root: a reference to the root of a binary tree
+#
+# Print the values in a single line separated by a space.
+#
+# Input Format
+#
+# You do not need to read any input from stdin. Our grader will pass the root node of a binary tree to your levelOrder function.
+#
+# Constraints
+#
+# 1 <= Nodes in the tree <= 500
+#
+# Output Format
+#
+# Print the values on a single line separated by space.
+#
+# Sample Input
+#
+#      1
+#       \
+#        2
+#         \
+#          5
+#         /  \
+#        3    6
+#         \
+#          4
+#
+# Sample Output
+#
+# 1 2 5 3 6 4
+#
+# Explanation
+#
+# We need to print the nodes level by level. We process each level from left to right.
+# Level Order Traversal: 1 -> 2 -> 5 -> 3 -> 6 -> 4
+#
+# Approach:
+# The level order traversal of a binary tree can be done using a queue data structure.
+# We start by adding the root node to the queue.
+# We then enter a loop where we dequeue a node from the queue, print its value, and enqueue its children.
+# We continue this process until the queue is empty.
+# The time complexity of this approach is O(n), where n is the number of nodes in the binary tree.
+# The space complexity is also O(n) in the worst case, where all nodes are at the last level of the tree.
+
 class Node:
     def __init__(self, info): 
         self.info = info  

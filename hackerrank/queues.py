@@ -6,6 +6,18 @@ import random
 import re
 import sys
 
+# Objective
+# You are given an integer, N. Your task is to figure out the number of moves it will take to reduce N to 0.
+# Each move consists of performing either of the following operations:
+# 1. If N is even, divide N by 2.
+# 2. If N is odd, reduce N by 1.
+# 
+# Function Description
+#
+# Complete the 'downToZero' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER n as parameter.
 #
 # Complete the 'downToZero' function below.
 #
